@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Nature's Views | Discover Sierra Leone</title>
 
     <meta name="description"
-        content="Nature's Views — Capturing Sierra Leone. Telling Africa's Story. Discover nature, culture, history, tourism and visual stories through photography.">
+          content="Nature's Views — Capturing Sierra Leone. Telling Africa's Story. Photography, tourism, culture, history and visual storytelling.">
 
-    <meta name="author" content="Eugene Raymond Campbell - Founder & CEO, Nature's Views">
+    <meta name="author"
+          content="Eugene Raymond Campbell - Founder & CEO, Nature's Views">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -32,7 +38,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(0, 0, 0, 0.92);
+            background: rgba(0, 0, 0, 0.94);
             padding: 15px 6%;
             display: flex;
             justify-content: space-between;
@@ -52,7 +58,9 @@
 
         nav {
             display: flex;
-            gap: 22px;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         nav a {
@@ -79,7 +87,10 @@
             padding: 40px 20px;
 
             background:
-                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+                linear-gradient(
+                    rgba(0,0,0,0.58),
+                    rgba(0,0,0,0.70)
+                ),
                 url("photo1.jpg");
 
             background-size: cover;
@@ -87,7 +98,7 @@
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
         }
 
         .hero h1 {
@@ -101,8 +112,8 @@
         }
 
         .hero p {
-            font-size: clamp(18px, 3vw, 25px);
-            margin-bottom: 30px;
+            font-size: clamp(18px, 3vw, 27px);
+            margin-bottom: 15px;
         }
 
         .tagline {
@@ -188,8 +199,9 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
             max-width: 1200px;
             margin: auto;
         }
@@ -198,7 +210,8 @@
             overflow: hidden;
             border-radius: 15px;
             background: white;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.12);
         }
 
         .gallery-item img {
@@ -245,7 +258,8 @@
             object-fit: cover;
             object-position: center top;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.18);
         }
 
         .founder-text h2 {
@@ -285,11 +299,18 @@
             color: white;
         }
 
+        .mission .section-title p {
+            color: #ddd;
+        }
+
         .mission-grid {
             max-width: 1100px;
             margin: auto;
+
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+
             gap: 25px;
         }
 
@@ -319,13 +340,73 @@
 
         .contact {
             background: #f5f7f5;
-            text-align: center;
         }
 
-        .contact p {
-            max-width: 650px;
-            margin: 0 auto 25px;
-            font-size: 18px;
+        .contact-container {
+            max-width: 1050px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .contact-info h3 {
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 18px;
+            font-size: 17px;
+        }
+
+        .contact-info a {
+            color: #159d76;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .enquiry-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .enquiry-form h3 {
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .enquiry-form input,
+        .enquiry-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .enquiry-form textarea {
+            resize: vertical;
+        }
+
+        .enquiry-form button {
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         /* ================= FOOTER ================= */
@@ -334,11 +415,12 @@
             background: #080d0b;
             color: white;
             text-align: center;
-            padding: 35px 20px;
+            padding: 40px 20px;
         }
 
         footer h3 {
             margin-bottom: 10px;
+            font-size: 25px;
         }
 
         footer p {
@@ -372,8 +454,6 @@
 
             nav {
                 gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
             }
 
             .hero {
@@ -393,15 +473,26 @@
                 font-size: 32px;
             }
 
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
             section {
                 padding: 60px 5%;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
             }
         }
 
     </style>
+
 </head>
 
+
 <body>
+
 
 <!-- ================= HEADER ================= -->
 
@@ -412,12 +503,19 @@
     </a>
 
     <nav>
+
         <a href="#home">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#gallery">Gallery</a>
+
         <a href="#founder">Founder</a>
+
         <a href="#mission">Mission</a>
+
         <a href="#contact">Contact</a>
+
     </nav>
 
 </header>
@@ -438,15 +536,23 @@
         </p>
 
         <div class="tagline">
+
             Photography • Nature • Culture • Tourism • History
+
         </div>
 
-        <a href="#gallery" class="btn btn-primary">
+        <a href="#gallery"
+           class="btn btn-primary">
+
             Explore Our Gallery
+
         </a>
 
-        <a href="#founder" class="btn btn-outline">
+        <a href="#founder"
+           class="btn btn-outline">
+
             Meet the Founder
+
         </a>
 
     </div>
@@ -460,7 +566,9 @@
 
     <div class="section-title">
 
-        <h2>About Nature's Views</h2>
+        <h2>
+            About Nature's Views
+        </h2>
 
         <p>
             Discovering the beauty of Sierra Leone and Africa
@@ -469,25 +577,33 @@
 
     </div>
 
+
     <div class="about-content">
 
         <p>
-            <strong>Nature's Views</strong> is a photography and
-            visual storytelling platform dedicated to showcasing
-            the beauty, culture, history, people and natural
-            resources of Sierra Leone and Africa.
+
+            <strong>Nature's Views</strong> is a photography
+            and visual storytelling platform dedicated to
+            showcasing the beauty, culture, history, people
+            and natural resources of Sierra Leone and Africa.
+
         </p>
 
         <p>
-            Through powerful photographs and stories, we aim to
-            inspire people to discover new places, appreciate
-            our heritage and see Africa from a different perspective.
+
+            Through powerful photographs and stories, we aim
+            to inspire people to discover new places,
+            appreciate our heritage and see Africa from a
+            different perspective.
+
         </p>
 
         <p>
+
             Our goal is to promote Sierra Leone as a destination
             for tourism while preserving and sharing the stories
             behind the places we capture.
+
         </p>
 
     </div>
@@ -501,7 +617,9 @@
 
     <div class="section-title">
 
-        <h2>Our Gallery</h2>
+        <h2>
+            Our Gallery
+        </h2>
 
         <p>
             A visual journey through Sierra Leone and Africa.
@@ -509,49 +627,117 @@
 
     </div>
 
+
     <div class="gallery-grid">
 
-        <div class="gallery-item">
-            <img src="photo1.jpg" alt="Beautiful scenery in Sierra Leone">
-            <div class="gallery-caption">
-                Sierra Leone Landscapes
-            </div>
-        </div>
+
+        <!-- FIRST PICTURE — NATURE'S VIEWS LOGO -->
 
         <div class="gallery-item">
-            <img src="photo2.jpg" alt="Nature in Sierra Leone">
+
+            <img
+                src="photo1.jpg"
+                alt="Nature's Views Photography Logo"
+            >
+
             <div class="gallery-caption">
+
+                Nature's Views Photography
+
+            </div>
+
+        </div>
+
+
+        <!-- SECOND PICTURE -->
+
+        <div class="gallery-item">
+
+            <img
+                src="photo2.jpg"
+                alt="Nature in Sierra Leone"
+            >
+
+            <div class="gallery-caption">
+
                 Nature & Wildlife
+
             </div>
+
         </div>
 
+
+        <!-- THIRD PICTURE -->
+
         <div class="gallery-item">
-            <img src="photo3.jpg" alt="Tourism destination in Sierra Leone">
+
+            <img
+                src="photo3.jpg"
+                alt="Tourism destination in Sierra Leone"
+            >
+
             <div class="gallery-caption">
+
                 Tourism Destinations
+
             </div>
+
         </div>
 
+
+        <!-- FOURTH PICTURE -->
+
         <div class="gallery-item">
-            <img src="photo4.jpg" alt="Beautiful African landscape">
+
+            <img
+                src="photo4.jpg"
+                alt="Beautiful African landscape"
+            >
+
             <div class="gallery-caption">
+
                 African Beauty
+
             </div>
+
         </div>
 
+
+        <!-- FIFTH PICTURE -->
+
         <div class="gallery-item">
-            <img src="photo5.jpg" alt="Historical place in Sierra Leone">
+
+            <img
+                src="photo5.jpg"
+                alt="Historical place in Sierra Leone"
+            >
+
             <div class="gallery-caption">
+
                 History & Heritage
+
             </div>
+
         </div>
 
+
+        <!-- SIXTH PICTURE -->
+
         <div class="gallery-item">
-            <img src="photo6.jpg" alt="Sierra Leone culture">
+
+            <img
+                src="photo6.jpg"
+                alt="Sierra Leone culture"
+            >
+
             <div class="gallery-caption">
+
                 Culture & People
+
             </div>
+
         </div>
+
 
     </div>
 
@@ -564,15 +750,21 @@
 
     <div class="section-title">
 
-        <h2>Meet the Founder</h2>
+        <h2>
+            Meet the Founder
+        </h2>
 
         <p>
-            The person behind the vision of Nature's Views.
+            The vision behind Nature's Views.
         </p>
 
     </div>
 
+
     <div class="founder-container">
+
+
+        <!-- FOUNDER PHOTO -->
 
         <div class="founder-photo">
 
@@ -584,44 +776,65 @@
         </div>
 
 
+        <!-- FOUNDER INFORMATION -->
+
         <div class="founder-text">
 
-            <h2>Eugene Raymond Campbell</h2>
+            <h2>
+                Eugene Raymond Campbell
+            </h2>
 
-            <h3>Founder & Chief Executive Officer</h3>
+            <h3>
+                Founder & Chief Executive Officer
+            </h3>
+
 
             <p>
-                Eugene Raymond Campbell is the Founder and Chief
-                Executive Officer of <strong>Nature's Views</strong>,
-                a photography and visual storytelling platform
-                created to showcase the beauty and richness of
-                Sierra Leone and Africa.
+
+                Eugene Raymond Campbell is the Founder and
+                Chief Executive Officer of
+                <strong>Nature's Views</strong>, a photography
+                and visual storytelling platform dedicated to
+                showcasing the beauty, culture, history and
+                natural heritage of Sierra Leone and Africa.
+
             </p>
 
+
             <p>
+
                 His passion for photography, nature, tourism,
                 history and visual storytelling inspired the
                 creation of Nature's Views.
+
             </p>
 
+
             <p>
+
                 Through this platform, his vision is to travel,
                 explore and document beautiful destinations,
                 historical places, natural resources, cultures
-                and communities across Sierra Leone and eventually
-                throughout Africa.
+                and communities across Sierra Leone and
+                eventually throughout Africa.
+
             </p>
+
 
             <div class="vision-box">
 
-                <strong>🌍 My Vision</strong>
+                <strong>
+                    🌍 My Vision
+                </strong>
 
                 To use photography and visual storytelling to
                 promote Sierra Leone and Africa to the world,
-                inspire tourism and preserve the stories and
-                beauty of our communities for future generations.
+                inspire tourism and preserve our natural,
+                cultural and historical heritage for future
+                generations.
 
             </div>
+
 
         </div>
 
@@ -636,9 +849,11 @@
 
     <div class="section-title">
 
-        <h2>Our Mission</h2>
+        <h2>
+            Our Mission
+        </h2>
 
-        <p style="color:#ddd;">
+        <p>
             Capturing the beauty. Preserving the story.
             Promoting the destination.
         </p>
@@ -648,15 +863,22 @@
 
     <div class="mission-grid">
 
+
         <div class="mission-card">
 
-            <div class="icon">📸</div>
+            <div class="icon">
+                📸
+            </div>
 
-            <h3>Photography</h3>
+            <h3>
+                Photography
+            </h3>
 
             <p>
+
                 Capturing powerful images that tell meaningful
                 stories about Sierra Leone and Africa.
+
             </p>
 
         </div>
@@ -664,13 +886,19 @@
 
         <div class="mission-card">
 
-            <div class="icon">🌿</div>
+            <div class="icon">
+                🌿
+            </div>
 
-            <h3>Nature</h3>
+            <h3>
+                Nature
+            </h3>
 
             <p>
+
                 Documenting the natural beauty, landscapes,
                 wildlife and resources of our continent.
+
             </p>
 
         </div>
@@ -678,13 +906,19 @@
 
         <div class="mission-card">
 
-            <div class="icon">🏛️</div>
+            <div class="icon">
+                🏛️
+            </div>
 
-            <h3>Heritage</h3>
+            <h3>
+                Heritage
+            </h3>
 
             <p>
+
                 Preserving stories of historical places,
                 traditions, cultures and communities.
+
             </p>
 
         </div>
@@ -692,222 +926,92 @@
 
         <div class="mission-card">
 
-            <div class="icon">🌍</div>
+            <div class="icon">
+                🌍
+            </div>
 
-            <h3>Tourism</h3>
+            <h3>
+                Tourism
+            </h3>
 
             <p>
+
                 Promoting Sierra Leone as a beautiful and
                 exciting destination for visitors.
+
             </p>
 
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- ================= CONTACT ================= -->
-
-<section class="contact" id="contact">
-
-    <div class="section-title">
-
-        <h2>Connect With Nature's Views</h2>
 <!-- ================= CONTACT & ENQUIRY ================= -->
 
 <section class="contact" id="contact">
 
     <div class="section-title">
-        <h2>Contact & Enquiries</h2>
+
+        <h2>
+            Contact & Enquiries
+        </h2>
 
         <p>
-            Have a question, photography request, partnership idea,
-            or tourism enquiry? Get in touch with Nature's Views.
+
+            Have a question, photography request, partnership
+            idea or tourism enquiry? Get in touch with
+            Nature's Views.
+
         </p>
+
     </div>
 
-    <div style="
-        max-width:1000px;
-        margin:auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:40px;
-    ">
+
+    <div class="contact-container">
+
 
         <!-- CONTACT INFORMATION -->
 
-        <div>
+        <div class="contact-info">
 
-            <h3 style="font-size:26px; margin-bottom:20px;">
+            <h3>
                 Get In Touch
             </h3>
 
-            <p style="margin-bottom:15px;">
-                📞 <strong>Phone:</strong><br>
-                +232 XX XXX XXX
-            </p>
-
-            <p style="margin-bottom:15px;">
-                💬 <strong>WhatsApp:</strong><br>
-                +232 XX XXX XXX
-            </p>
-
-            <p style="margin-bottom:15px;">
-                📧 <strong>Email:</strong><br>
-                your-email@example.com
-            </p>
-
-            <p style="margin-bottom:15px;">
-                📍 <strong>Location:</strong><br>
-                Sierra Leone, West Africa
-            </p>
 
             <p>
-                📸 <strong>Photography & Tourism Enquiries</strong><br>
-                Contact Nature's Views for photography,
-                visual storytelling, tourism promotion,
-                collaborations and media enquiries.
+
+                📧 <strong>Email:</strong><br>
+
+                <a href="mailto:natureview233@gmail.com">
+
+                    natureview233@gmail.com
+
+                </a>
+
             </p>
 
-        </div>
+
+            <p>
+
+                📍 <strong>Location:</strong><br>
+
+                Sierra Leone, West Africa
+
+            </p>
 
 
-        <!-- ENQUIRY FORM -->
+            <p>
 
-        <div>
+                📸 <strong>Photography Enquiries</strong><br>
 
-            <h3 style="font-size:26px; margin-bottom:20px;">
-                Send an Enquiry
-            </h3>
+                Photography services, visual storytelling,
+                events and media projects.
 
-            <form action="https://formsubmit.co/YOUR-EMAIL-HERE"
-                  method="POST">
-
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                    style="
-                        width:100%;
-                        padding:14px;
-                        margin-bottom:15px;
-                        border:1px solid #ccc;
-                        border-radius:8px;
-                    "
-                >
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                    style="
-                        width:100%;
-                        padding:14px;
-                        margin-bottom:15px;
-                        border:1px solid #ccc;
-                        border-radius:8px;
-                    "
-                >
-
-                <input
-                    type="text"
-                    name="subject"
-                    placeholder="Enquiry Subject"
-                    required
-                    style="
-                        width:100%;
-                        padding:14px;
-                        margin-bottom:15px;
-                        border:1px solid #ccc;
-                        border-radius:8px;
-                    "
-                >
-
-                <textarea
-                    name="message"
-                    placeholder="Write your enquiry here..."
-                    rows="6"
-                    required
-                    style="
-                        width:100%;
-                        padding:14px;
-                        margin-bottom:15px;
-                        border:1px solid #ccc;
-                        border-radius:8px;
-                        resize:vertical;
-                    "
-                ></textarea>
-
-                <button
-                    type="submit"
-                    class="btn btn-primary"
-                    style="border:none; cursor:pointer;"
-                >
-                    Send Enquiry
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-    </div>
-
-    <p>
-        Follow our journey as we explore Sierra Leone and
-        share Africa's beauty with the world.
-    </p>
-
-    <https://www.facebook.com/CamRayEug
-
-    <a
-        href="https://www.facebook.com/"
-        target="_blank"
-        class="btn btn-primary"
-    >
-        Follow Us on Facebook
-    </a>
-
-</section>
+            </p>
 
 
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <h3>Nature's Views</h3>
-
-    <p>
-        Capturing Sierra Leone. Telling Africa's Story.
-    </p>
-
-    <div class="social-links">
-
-        <a href="https://www.facebook.com/" target="_blank">
-            Facebook
-        </a>
-        action="https://formsubmit.co/natureview233@gmail.com"
-    </div>
-
-    >pstyle="margin-bottom:15px;">
-    📧 <strong>Email:</strong><br>
-    natureview233@gmail.com
-    </p>
-        Founded by Eugene Raymond Campbell
-    </p>
-
-    <p>
-        © 2026 Nature's Views. All Rights Reserved.
-    </p>
-
-</footer>
-
-
-</body>
-</html>
+    
