@@ -1,1 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Nature's Views | Discover Sierra Leone</title>
+
+    <meta name="description" content="Nature's Views — Capturing Sierra Leone. Telling Africa's Story. Photography, visual storytelling, tourism promotion and destination features.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #06100d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #050807;
+            border-bottom: 1px solid #26352f;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo span {
+            color: #1688d4;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d89b00;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
+                url("photo1.jpg") center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            color: #1688d4;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+            color: #eeeeee;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #d89b00;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #b77f00;
+            transform: translateY(-2px);
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+
+        .section-title span {
+            color: #1688d4;
+        }
+
+        .section-intro {
+            max-width: 750px;
+            margin: 0 auto 45px;
+            text-align: center;
+            color: #c8cfcc;
+            font-size: 17px;
+        }
+
+        /* ABOUT */
+        .about {
+            background: #081511;
+        }
+
+        .about-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #d4d9d7;
+        }
+
+        .about-box p {
+            margin-bottom: 18px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 15px;
+            border: 1px solid #263a33;
+            background: #0b1713;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.07);
+        }
+
+        /* FOUNDER */
+        .founder-section {
+            background: #07130f;
+        }
+
+        .founder {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .founder-photo {
+            text-align: center;
+        }
+
+        .founder-photo img {
+            width: 100%;
+            max-width: 350px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 2px solid #d89b00;
+        }
+
+        .founder-info h3 {
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .founder-title {
+            color: #d89b00;
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .founder-info p {
+            color: #c8cfcc;
+            margin-bottom: 18px;
+        }
+
+        /* MISSION */
+        .mission {
+            background: #081511;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .mission-card {
+            background: #0d1c17;
+            border: 1px solid #263a33;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .mission-card .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .mission-card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .mission-card p {
+            color: #bfc8c4;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #06100d;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .contact-info {
+            padding: 30px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
+            color: #c8cfcc;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #d89b00;
+        }
+
+        /* FORM */
+        .contact-form {
+            background: #07130f;
+            border: 1px solid #263a33;
+            padding: 35px;
+            border-radius: 25px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #43534d;
+            background: #08110e;
+            color: #ffffff;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: #d89b00;
+        }
+
+        /* DROPDOWN */
+        .contact-form select {
+            appearance: auto;
+            cursor: pointer;
+        }
+
+        .contact-form select option {
+            background: #ffffff;
+            color: #222222;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            padding: 16px;
+            border-radius: 30px;
+            background: #d89b00;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #b77f00;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #030504;
+            border-top: 1px solid #26352f;
+            text-align: center;
+            padding: 30px 20px;
+            color: #8f9a95;
+        }
+
+        footer strong {
+            color: #ffffff;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mission-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .founder {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .founder-photo img {
+                height: 400px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                margin: 5px 8px;
+                display: inline-block;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 25px 20px;
+            }
+
+            .contact-info {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav-container">
+
+        <div class="logo">
+            NATURE'S <span>VIEWS</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#founder">Founder</a>
+            <a href="#mission">Mission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            NATURE'S <span>VIEWS</span>
+        </h1>
+
+        <p>
+            Capturing Sierra Leone. Telling Africa's Story.
+        </p>
+
+        <a href="#gallery" class="btn">
+            Explore Our Gallery
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2 class="section-title">
+        About <span>Nature's Views</span>
+    </h2>
+
+    <p class="section-intro">
+        Nature's Views is a photography and visual storytelling platform
+        dedicated to showcasing the beauty, culture, history, people and
+        natural resources of Sierra Leone and Africa.
+    </p>
+
+    <div class="about-box">
+
+        <p>
+            Through photography and powerful visual stories, Nature's Views
+            seeks to promote tourism, preserve memories and introduce the
+            world to Africa's extraordinary destinations.
+        </p>
+
+        <p>
+            Our vision is to create images and stories that inspire people
+            to explore, appreciate and protect the beauty of Sierra Leone
+            and the African continent.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+    <h2 class="section-title">
+        Our <span>Gallery</span>
+    </h2>
+
+    <p class="section-intro">
+        Explore some of the visual stories captured by Nature's Views.
+    </p>
+
+    <div class="gallery">
+
+        <!-- FIRST IMAGE -->
+        <div class="gallery-item">
+            <img src="photo1.jpg" alt="Nature's Views">
+        </div>
+
+        <div class="gallery-item">
+            <img src="photo2.jpg" alt="Sierra Leone landscape">
+        </div>
+
+        <div class="gallery-item">
+            <img src="photo3.jpg" alt="Sierra Leone nature">
+        </div>
+
+        <div class="gallery-item">
+            <img src="photo4.jpg" alt="Sierra Leone destination">
+        </div>
+
+        <div class="gallery-item">
+            <img src="photo5.jpg" alt="African culture and nature">
+        </div>
+
+        <div class="gallery-item">
+            <img src="photo6.jpg" alt="Beautiful Sierra Leone">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOUNDER -->
+<section class="founder-section" id="founder">
+
+    <h2 class="section-title">
+        Meet the <span>Founder</span>
+    </h2>
+
+    <p class="section-intro">
+        The person behind the vision of Nature's Views.
+    </p>
+
+    <div class="founder">
+
+        <div class="founder-photo">
+
+            <img
+                src="founder.jpg"
+                alt="Eugene Raymond Campbell - Founder and CEO of Nature's Views"
+            >
+
+        </div>
+
+
+        <div class="founder-info">
+
+            <h3>
+                Eugene Raymond Campbell
+            </h3>
+
+            <div class="founder-title">
+                Founder & Chief Executive Officer
+            </div>
+
+            <p>
+                Eugene Raymond Campbell is the Founder and Chief Executive
+                Officer of Nature's Views, a photography and visual
+                storytelling platform focused on showcasing Sierra Leone
+                and Africa.
+            </p>
+
+            <p>
+                His vision is to use photography, storytelling and tourism
+                promotion to highlight the beauty, history, culture and
+                natural resources of Sierra Leone.
+            </p>
+
+            <p>
+                Nature's Views is built on the belief that powerful images
+                can inspire people to discover new places, appreciate
+                African heritage and promote sustainable tourism.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+
+    <h2 class="section-title">
+        Our <span>Mission</span>
+    </h2>
+
+    <p class="section-intro">
+        Nature's Views is committed to using visual media to promote
+        Sierra Leone and Africa to the world.
+    </p>
+
+    <div class="mission-grid">
+
+        <div class="mission-card">
+
+            <div class="icon">📸</div>
+
+            <h3>
+                Photography
+            </h3>
+
+            <p>
+                Capturing powerful images of people, places, nature
+                and everyday life.
+            </p>
+
+        </div>
+
+
+        <div class="mission-card">
+
+            <div class="icon">🌿</div>
+
+            <h3>
+                Nature
+            </h3>
+
+            <p>
+                Showcasing the natural beauty and resources of
+                Sierra Leone and Africa.
+            </p>
+
+        </div>
+
+
+        <div class="mission-card">
+
+            <div class="icon">🏛️</div>
+
+            <h3>
+                Heritage
+            </h3>
+
+            <p>
+                Documenting culture, history, traditions and
+                important places.
+            </p>
+
+        </div>
+
+
+        <div class="mission-card">
+
+            <div class="icon">🌍</div>
+
+            <h3>
+                Tourism
+            </h3>
+
+            <p>
+                Promoting destinations and encouraging people to
+                discover Sierra Leone.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="section-title">
+        Contact & <span>Enquiries</span>
+    </h2>
+
+    <p class="section-intro">
+        Want to work with Nature's Views or feature your destination?
+        Send us an enquiry.
+    </p>
+
+
+    <div class="contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-info">
+
+            <h3>
+                Let's Connect
+            </h3>
+
+            <p>
+                📞 <strong>Phone:</strong><br>
+
+                <a href="tel:+23276377255">
+                    +232 76 377255
+                </a>
+            </p>
+
+
+            <p>
+                💬 <strong>WhatsApp:</strong><br>
+
+                <a
+                    class="whatsapp"
+                    href="https://wa.me/23276377255"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Chat with us on WhatsApp
+                </a>
+            </p>
+
+
+            <p>
+                📧 <strong>Email:</strong><br>
+
+                <a href="mailto:natureview233@gmail.com">
+                    natureview233@gmail.com
+                </a>
+            </p>
+
+
+            <p>
+                📍 <strong>Location:</strong><br>
+                Sierra Leone, West Africa
+            </p>
+
+        </div>
+
+
+        <!-- ENQUIRY FORM -->
+        <div class="contact-form">
+
+            <form
+                action="https://formsubmit.co/natureview233@gmail.com"
+                method="POST"
+            >
+
+                <!-- FORM SETTINGS -->
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Nature's Views Enquiry"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+
+                <!-- NAME -->
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <!-- EMAIL -->
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- ENQUIRY TYPE -->
+                <label for="service">
+                    What are you interested in?
+                </label>
+
+                <select
+                    id="service"
+                    name="Service"
+                    required
+                >
+
+                    <option value="" disabled selected>
+                        Select an enquiry type
+                    </option>
+
+                    <option value="Photography">
+                        Photography
+                    </option>
+
+                    <option value="Tourism Promotion">
+                        Tourism promotion
+                    </option>
+
+                    <option value="Visual Storytelling">
+                        Visual storytelling
+                    </option>
+
+                    <option value="Destination Feature">
+                        Destination feature
+                    </option>
+
+                    <option value="Collaboration">
+                        Collaboration
+                    </option>
+
+                </select>
+
+
+                <!-- MESSAGE -->
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="Message"
+                    placeholder="Tell us about your enquiry..."
+                    required
+                ></textarea>
+
+
+                <!-- SUBMIT -->
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Send Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 <strong>Nature's Views</strong>.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        Founded by Eugene Raymond Campbell —
+        Founder & Chief Executive Officer.
+    </p>
+
+</footer>
+
+</body>
+</html>
