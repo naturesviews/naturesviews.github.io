@@ -74,12 +74,8 @@
             justify-content: center;
             text-align: center;
             padding: 50px 20px;
-
             background:
-                linear-gradient(
-                    rgba(0,0,0,0.60),
-                    rgba(0,0,0,0.75)
-                ),
+                linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
                 url("photo1.jpg") center/cover no-repeat;
         }
 
@@ -113,8 +109,6 @@
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
-            border: none;
-            cursor: pointer;
         }
 
         .btn:hover {
@@ -250,12 +244,6 @@
             border-radius: 15px;
             padding: 30px 20px;
             text-align: center;
-            transition: 0.3s;
-        }
-
-        .mission-card:hover {
-            transform: translateY(-5px);
-            border-color: #1688d4;
         }
 
         .mission-card .icon {
@@ -343,6 +331,7 @@
             border-color: #d89b00;
         }
 
+        /* DROPDOWN */
         .contact-form select {
             appearance: auto;
             cursor: pointer;
@@ -360,6 +349,7 @@
 
         .submit-btn {
             width: 100%;
+            border: none;
             padding: 16px;
             border-radius: 30px;
             background: #d89b00;
@@ -375,15 +365,9 @@
         }
 
         /* WHATSAPP */
-        .whatsapp-button {
+        .whatsapp {
             display: inline-block;
             margin-top: 5px;
-            color: #25D366 !important;
-            font-weight: bold;
-        }
-
-        .whatsapp-button:hover {
-            color: #d89b00 !important;
         }
 
         /* FOOTER */
@@ -395,36 +379,8 @@
             color: #8f9a95;
         }
 
-        footer p {
-            margin: 7px 0;
-        }
-
         footer strong {
             color: #ffffff;
-        }
-
-        /* FLOATING WHATSAPP */
-        .floating-whatsapp {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            width: 60px;
-            height: 60px;
-            background: #25D366;
-            color: #ffffff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-            z-index: 2000;
-            transition: 0.3s;
-        }
-
-        .floating-whatsapp:hover {
-            transform: scale(1.1);
         }
 
         /* MOBILE */
@@ -503,23 +459,14 @@
             .contact-info {
                 padding: 10px;
             }
-
-            .founder-info h3 {
-                font-size: 28px;
-            }
         }
     </style>
 </head>
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
-
+<!-- HEADER -->
 <header>
-
     <div class="nav-container">
 
         <div class="logo">
@@ -527,31 +474,19 @@
         </div>
 
         <nav>
-
             <a href="#home">Home</a>
-
             <a href="#about">About</a>
-
             <a href="#gallery">Gallery</a>
-
             <a href="#founder">Founder</a>
-
             <a href="#mission">Mission</a>
-
             <a href="#contact">Contact</a>
-
         </nav>
 
     </div>
-
 </header>
 
 
-
-<!-- =========================
-     HERO
-========================= -->
-
+<!-- HERO -->
 <section class="hero" id="home">
 
     <div class="hero-content">
@@ -564,18 +499,8 @@
             Capturing Sierra Leone. Telling Africa's Story.
         </p>
 
-        <p>
-            Discover the beauty, culture, history, people and natural
-            wonders of Sierra Leone and Africa through photography
-            and visual storytelling.
-        </p>
-
         <a href="#gallery" class="btn">
             Explore Our Gallery
-        </a>
-
-        <a href="#contact" class="btn">
-            Contact Us
         </a>
 
     </div>
@@ -583,40 +508,31 @@
 </section>
 
 
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section class="about" id="about">
+<!-- ABOUT -->
+<section id="about">
 
     <h2 class="section-title">
         About <span>Nature's Views</span>
     </h2>
 
     <p class="section-intro">
-        Photography • Tourism • Visual Storytelling • Destination Promotion
+        Nature's Views is a photography and visual storytelling platform
+        dedicated to showcasing the beauty, culture, history, people and
+        natural resources of Sierra Leone and Africa.
     </p>
 
     <div class="about-box">
 
         <p>
-            Nature's Views is a Sierra Leonean photography and visual
-            storytelling platform dedicated to showcasing the beauty,
-            culture, history, people and natural resources of Sierra Leone
-            and Africa.
+            Through photography and powerful visual stories, Nature's Views
+            seeks to promote tourism, preserve memories and introduce the
+            world to Africa's extraordinary destinations.
         </p>
 
         <p>
-            Through photography and storytelling, we promote destinations,
-            document memorable moments and introduce the world to the
-            extraordinary beauty of Africa.
-        </p>
-
-        <p>
-            Our vision is to build a powerful African visual storytelling
-            platform that inspires people to explore, appreciate and
-            protect the places, cultures and heritage that make Africa unique.
+            Our vision is to create images and stories that inspire people
+            to explore, appreciate and protect the beauty of Sierra Leone
+            and the African continent.
         </p>
 
     </div>
@@ -624,11 +540,7 @@
 </section>
 
 
-
-<!-- =========================
-     GALLERY
-========================= -->
-
+<!-- GALLERY -->
 <section id="gallery">
 
     <h2 class="section-title">
@@ -636,87 +548,34 @@
     </h2>
 
     <p class="section-intro">
-        A collection of moments, places and stories captured through
-        Nature's Views.
+        Explore some of the visual stories captured by Nature's Views.
     </p>
 
     <div class="gallery">
 
-
-        <!-- FIRST IMAGE: FOUNDER -->
+        <!-- FIRST IMAGE -->
         <div class="gallery-item">
-
-            <img
-                src="founder.jpg"
-                alt="Eugene Raymond Campbell - Founder of Nature's Views"
-            >
-
+            <img src="photo1.jpg" alt="Nature's Views">
         </div>
 
-
-        <!-- PHOTO 1 -->
         <div class="gallery-item">
-
-            <img
-                src="photo1.jpg"
-                alt="Nature's Views Sierra Leone Photography"
-            >
-
+            <img src="photo2.jpg" alt="Sierra Leone landscape">
         </div>
 
-
-        <!-- PHOTO 2 -->
         <div class="gallery-item">
-
-            <img
-                src="photo2.jpg"
-                alt="Sierra Leone landscape"
-            >
-
+            <img src="photo3.jpg" alt="Sierra Leone nature">
         </div>
 
-
-        <!-- PHOTO 3 -->
         <div class="gallery-item">
-
-            <img
-                src="photo3.jpg"
-                alt="Sierra Leone nature"
-            >
-
+            <img src="photo4.jpg" alt="Sierra Leone destination">
         </div>
 
-
-        <!-- PHOTO 4 -->
         <div class="gallery-item">
-
-            <img
-                src="photo4.jpg"
-                alt="Sierra Leone tourism destination"
-            >
-
+            <img src="photo5.jpg" alt="African culture and nature">
         </div>
 
-
-        <!-- PHOTO 5 -->
         <div class="gallery-item">
-
-            <img
-                src="photo5.jpg"
-                alt="African culture and destination"
-            >
-
-        </div>
-
-
-        <!-- PHOTO 6 -->
-        <div class="gallery-item">
-
-            <img
-                src="photo6.jpg"
-                alt="Beautiful Sierra Leone"
-            >
-
+            <img src="photo6.jpg" alt="Beautiful Sierra Leone">
         </div>
 
     </div>
@@ -724,11 +583,7 @@
 </section>
 
 
-
-<!-- =========================
-     FOUNDER
-========================= -->
-
+<!-- FOUNDER -->
 <section class="founder-section" id="founder">
 
     <h2 class="section-title">
@@ -736,11 +591,10 @@
     </h2>
 
     <p class="section-intro">
-        The vision behind Nature's Views.
+        The person behind the vision of Nature's Views.
     </p>
 
     <div class="founder">
-
 
         <div class="founder-photo">
 
@@ -764,21 +618,21 @@
 
             <p>
                 Eugene Raymond Campbell is the Founder and Chief Executive
-                Officer of Nature's Views, a photography, tourism promotion
-                and visual storytelling platform focused on Sierra Leone
+                Officer of Nature's Views, a photography and visual
+                storytelling platform focused on showcasing Sierra Leone
                 and Africa.
             </p>
 
             <p>
-                His passion is to capture the beauty of nature, historical
-                places, communities, culture and destinations while using
-                photography to promote Sierra Leone to the world.
+                His vision is to use photography, storytelling and tourism
+                promotion to highlight the beauty, history, culture and
+                natural resources of Sierra Leone.
             </p>
 
             <p>
-                Through Nature's Views, Eugene aims to tell authentic
-                African stories through powerful images and meaningful
-                visual experiences.
+                Nature's Views is built on the belief that powerful images
+                can inspire people to discover new places, appreciate
+                African heritage and promote sustainable tourism.
             </p>
 
         </div>
@@ -788,11 +642,7 @@
 </section>
 
 
-
-<!-- =========================
-     MISSION
-========================= -->
-
+<!-- MISSION -->
 <section class="mission" id="mission">
 
     <h2 class="section-title">
@@ -800,84 +650,71 @@
     </h2>
 
     <p class="section-intro">
-        Using photography and visual storytelling to showcase Sierra Leone
-        and Africa to the world.
+        Nature's Views is committed to using visual media to promote
+        Sierra Leone and Africa to the world.
     </p>
-
 
     <div class="mission-grid">
 
-
         <div class="mission-card">
 
-            <div class="icon">
-                📸
-            </div>
+            <div class="icon">📸</div>
 
             <h3>
                 Photography
             </h3>
 
             <p>
-                Capturing powerful images of people, places, nature,
-                culture and special moments.
+                Capturing powerful images of people, places, nature
+                and everyday life.
             </p>
 
         </div>
 
 
-
         <div class="mission-card">
 
-            <div class="icon">
-                🌿
-            </div>
+            <div class="icon">🌿</div>
 
             <h3>
                 Nature
             </h3>
 
             <p>
-                Showcasing the natural beauty, landscapes and resources
-                of Sierra Leone and Africa.
+                Showcasing the natural beauty and resources of
+                Sierra Leone and Africa.
             </p>
 
         </div>
 
 
-
         <div class="mission-card">
 
-            <div class="icon">
-                🏛️
-            </div>
+            <div class="icon">🏛️</div>
 
             <h3>
                 Heritage
             </h3>
 
             <p>
-                Documenting culture, history, traditions and important
-                heritage sites.
+                Documenting culture, history, traditions and
+                important places.
             </p>
 
         </div>
 
 
-
         <div class="mission-card">
 
-            <div class="icon">
-                🌍
-            </div>
+            <div class="icon">🌍</div>
 
             <h3>
                 Tourism
             </h3>
 
             <p>
-                Promoting Sierra Leone's destinations and encouraging
-                people around the world to discover Africa.
+                Promoting destinations and encouraging people to
+                discover Sierra Leone.
             </p>
 
         </div>
@@ -887,11 +724,7 @@
 </section>
 
 
-
-<!-- =========================
-     CONTACT & ENQUIRY
-========================= -->
-
+<!-- CONTACT -->
 <section class="contact" id="contact">
 
     <h2 class="section-title">
@@ -899,8 +732,8 @@
     </h2>
 
     <p class="section-intro">
-        Want to work with Nature's Views, promote a destination,
-        request photography or collaborate with us? Send us a message.
+        Want to work with Nature's Views or feature your destination?
+        Send us an enquiry.
     </p>
 
 
@@ -908,57 +741,159 @@
 
 
         <!-- CONTACT INFORMATION -->
-
         <div class="contact-info">
 
             <h3>
                 Let's Connect
             </h3>
 
-
             <p>
-
                 📞 <strong>Phone:</strong><br>
 
-                <a href="tel:+23276377155">
-                    +232 76 377155
+                <a href="tel:+23276377255">
+                    +232 76 377255
                 </a>
-
             </p>
 
 
-
             <p>
-
                 💬 <strong>WhatsApp:</strong><br>
 
                 <a
-                    class="whatsapp-button"
+                    class="whatsapp"
                     href="https://wa.me/23276377155"
                     target="_blank"
                     rel="noopener"
                 >
                     Chat with us on WhatsApp
                 </a>
-
             </p>
 
 
-
             <p>
-
                 📧 <strong>Email:</strong><br>
 
                 <a href="mailto:natureview233@gmail.com">
                     natureview233@gmail.com
                 </a>
-
             </p>
 
 
-
             <p>
-
                 📍 <strong>Location:</strong><br>
+                Sierra Leone, West Africa
+            </p>
 
-   
+        </div>
+
+
+        <!-- ENQUIRY FORM -->
+        <div class="contact-form">
+
+            <form
+                action="https://formsubmit.co/natureview233@gmail.com"
+                method="POST"
+            >
+
+                <!-- FORM SETTINGS -->
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Nature's Views Enquiry"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+
+                <!-- NAME -->
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <!-- EMAIL -->
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- ENQUIRY TYPE -->
+                <label for="service">
+                    What are you interested in?
+                </label>
+
+                <select
+                    id="service"
+                    name="Service"
+                    required
+                >
+
+                    <option value="" disabled selected>
+                        Select an enquiry type
+                    </option>
+
+                    <option value="Photography">
+                        Photography
+                    </option>
+
+                    <option value="Tourism Promotion">
+                        Tourism promotion
+                    </option>
+
+                    <option value="Visual Storytelling">
+                        Visual storytelling
+                    </option>
+
+                    <option value="Destination Feature">
+                        Destination feature
+                    </option>
+
+                    <option value="Collaboration">
+                        Collaboration
+                    </option>
+
+                </select>
+
+
+                <!-- MESSAGE -->
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="Message"
+                    placeholder="Tell us about your enquiry..."
+                    required
+                ></textarea>
+
+
+                <!-- SUBMIT -->
+                <button
+                    t
